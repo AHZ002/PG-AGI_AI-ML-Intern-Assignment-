@@ -24,6 +24,6 @@ Thumbs.db
 *.log
 
 # Temporary files
-# temp.py
+temp.py
 
 t.py
