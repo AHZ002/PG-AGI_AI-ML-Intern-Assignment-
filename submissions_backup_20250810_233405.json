@@ -795,38 +795,5 @@
     "saved_at": "2025-08-10T16:37:42.947443Z",
     "version": "1.0",
     "data_retention_policy": "anonymized_data_kept_for_analysis"
-  },
-  {
-    "name_initials": "AHZ",
-    "email_hash": "707ac81077795c9e242f4611568d6d7cf327a3ea1044431a93834c5108063317",
-    "email_domain": "gmail.com",
-    "phone_hash": "ae3fb5d7420aa91162a2ffecb9103d6ffd095cbba9e73eaf8fca75cde5daedb9",
-    "phone_provided": true,
-    "experience": 0,
-    "desired_position": "Data Scientist",
-    "location": "Lucknow",
-    "tech_stack": "Pyrhon , ML",
-    "started_at": "2025-08-10T18:04:05.161788Z",
-    "saved_at": "2025-08-10T18:04:05.196360Z",
-    "version": "1.0",
-    "data_retention_policy": "anonymized_data_kept_for_analysis"
-  },
-  {
-    "name_initials": "AHZ",
-    "email_hash": "707ac81077795c9e242f4611568d6d7cf327a3ea1044431a93834c5108063317",
-    "email_domain": "gmail.com",
-    "phone_hash": "ae3fb5d7420aa91162a2ffecb9103d6ffd095cbba9e73eaf8fca75cde5daedb9",
-    "phone_provided": true,
-    "experience": 0,
-    "desired_position": "Data Scientist",
-    "location": "Lucknow",
-    "tech_stack": "Pyrhon , ML",
-    "started_at": "2025-08-10T18:04:05.161788Z",
-    "responses": [],
-    "sentiment_scores": [],
-    "completed_at": "2025-08-10T18:04:35.269247Z",
-    "saved_at": "2025-08-10T18:04:35.292060Z",
-    "version": "1.0",
-    "data_retention_policy": "anonymized_data_kept_for_analysis"
   }
 ]
