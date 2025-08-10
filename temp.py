@@ -226,7 +226,7 @@
 
 # #PROMPTS.PY
 
-# """
+# # """
 # prompts.py
 # Generates technical questions per technology using Google Gemini.
 # Returns a dictionary: { "questions": { "Python": [...], "Django": [...] } }
