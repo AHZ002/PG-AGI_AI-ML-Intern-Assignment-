@@ -9,11 +9,11 @@ An AI-powered hiring assistant chatbot that streamlines the technical screening 
 
 ## 🎥 Demo Video
 
-Click below to watch the live demo of the TalentScout Hiring Assistant in action:
+Watch the TalentScout Hiring Assistant in action:
 
-[![Watch the demo](https://img.shields.io/badge/Watch%20Demo-Click%20Here-blue)]([http://43.205.115.140:8501](https://www.loom.com/share/3b3254e2947e47cda2908f11bdb5315a?sid=51de074d-fb76-492b-ad15-1d6d0d2a7f82))
+[![Demo Video](https://cdn.loom.com/sessions/thumbnails/3b3254e2947e47cda2908f11bdb5315a-with-play.gif)](https://www.loom.com/share/3b3254e2947e47cda2908f11bdb5315a?sid=45bcd70a-542a-4c7c-b51f-7dd4a53bca62)
 
----
+[🎬 View Full Demo](https://www.loom.com/share/3b3254e2947e47cda2908f11bdb5315a?sid=45bcd70a-542a-4c7c-b51f-7dd4a53bca62)
 
 ## 🌟 Features
 
