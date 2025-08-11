@@ -7,6 +7,14 @@ An AI-powered hiring assistant chatbot that streamlines the technical screening 
 ![Google Gemini](https://img.shields.io/badge/google%20gemini-AI-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## 🎥 Demo Video
+
+Click below to watch the live demo of the TalentScout Hiring Assistant in action:
+
+[![Watch the demo](https://img.shields.io/badge/Watch%20Demo-Click%20Here-blue)]([http://43.205.115.140:8501](https://www.loom.com/share/3b3254e2947e47cda2908f11bdb5315a?sid=51de074d-fb76-492b-ad15-1d6d0d2a7f82))
+
+---
+
 ## 🌟 Features
 
 ### Core Capabilities
@@ -375,7 +383,3 @@ PermissionError: [Errno 13] Permission denied: 'submissions.json'
 **Project Maintainer**: Abdul Hadi
 - Email: abdulhadizeeshan79@gmail.com
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdul-hadi-070727259/)
-
-  
-
-
