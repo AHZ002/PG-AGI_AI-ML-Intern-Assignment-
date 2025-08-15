@@ -1,4 +1,4 @@
-# 🤖 TalentScout Hiring Assistant
+# 🤖 TalentScout Hiring Assistant 
 
 An AI-powered hiring assistant chatbot that streamlines the technical screening process for recruitment agencies. Built with Streamlit and Google Gemini AI, it provides an interactive, personalized candidate evaluation experience.
 
@@ -42,13 +42,13 @@ Watch the TalentScout Hiring Assistant in action:
 ### Installation
 
 1. **Clone the repository**
-   ```bash
+```bash
    git clone https://github.com/yourusername/talentscout-hiring-assistant.git
    cd talentscout-hiring-assistant
-   ```
+```
 
 2. **Create a virtual environment**
-   ```bash
+```bash
    python -m venv venv
    
    # On Windows
@@ -56,30 +56,41 @@ Watch the TalentScout Hiring Assistant in action:
    
    # On macOS/Linux
    source venv/bin/activate
-   ```
+```
 
 3. **Install dependencies**
-   ```bash
+```bash
    pip install -r requirements.txt
-   ```
+```
 
 4. **Set up environment variables**
-   ```bash
+```bash
    # Create .env file
    echo "GEMINI_API_KEY=your_gemini_api_key_here" > .env
-   ```
-   
-   **Get your Gemini API key:**
-   - Visit [Google AI Studio](https://aistudio.google.com/)
-   - Create a new project or select existing
-   - Generate API key from the API section
+```
+
+**Get your Gemini API key:**
+- Visit [Google AI Studio](https://aistudio.google.com/)
+- Create a new project or select existing
+- Generate API key from the API section
 
 5. **Run the application**
-   ```bash
+```bash
    streamlit run app.py
-   ```
+```
 
-The application will open in your browser at `http://localhost:8501`
+The application will open in your browser at http://localhost:8501
+
+## ☁️ AWS Deployment
+
+The application is deployed on AWS EC2 (t2.micro instance) for public access and scalable candidate evaluation.
+
+### AWS Deployment Steps
+
+**Launch EC2 Instance**
+- Instance type: t2.micro (eligible for free tier)
+- AMI: Amazon Linux 2 or Ubuntu 20.04 LTS
+- Security Group: Allow HTTP (port 80) and custom port 8501
 
 ## 📋 Usage Guide
 
@@ -101,14 +112,13 @@ The application will open in your browser at `http://localhost:8501`
    - Option to start a new session
 
 ### For Recruiters
-
-- **Data Storage**: All submissions stored in `submissions.json` with anonymized PII
+- **Data Storage**: All submissions stored in submissions.json with anonymized PII
 - **Analytics**: View completion rates and candidate statistics
 - **Backup System**: Automatic backups prevent data loss
 
 ### Exit Keywords
 Type any of these to exit gracefully:
-`exit`, `quit`, `bye`, `stop`, `end`, `thanks`, `done`, `goodbye`
+exit, quit, bye, stop, end, thanks, done, goodbye
 
 ## 🔧 Technical Architecture
 
@@ -124,6 +134,7 @@ Type any of these to exit gracefully:
 | **Validation** | Regex + Custom logic | Input sanitization |
 
 ### Project Structure
+
 ```
 talentscout-hiring-assistant/
 ├── app.py                 # Main Streamlit application
@@ -138,19 +149,19 @@ talentscout-hiring-assistant/
 
 ### Core Modules
 
-#### `app.py` - Main Application
+#### app.py - Main Application
 - **Session Management**: Streamlit session state handling
 - **Phase Control**: Three-phase conversation workflow
 - **UI Components**: Forms, progress bars, and interactive elements
 - **Error Handling**: User-friendly error messages and recovery
 
-#### `prompts.py` - AI Integration
+#### prompts.py - AI Integration
 - **Question Generation**: Dynamic technical questions using Gemini AI
 - **Prompt Engineering**: Optimized prompts for consistent output
 - **Sentiment Analysis**: Real-time candidate mood assessment
 - **Fallback Systems**: Multiple parsing strategies for robustness
 
-#### `utils.py` - Core Utilities
+#### utils.py - Core Utilities
 - **Data Validation**: Email, phone, and input sanitization
 - **Security**: PII hashing and anonymization
 - **File Operations**: Atomic writes with backup and recovery
@@ -159,6 +170,7 @@ talentscout-hiring-assistant/
 ## 🎯 Prompt Design Strategy
 
 ### Question Generation Prompt
+
 The system uses carefully engineered prompts to ensure high-quality, relevant questions:
 
 ```python
@@ -193,7 +205,8 @@ The system uses carefully engineered prompts to ensure high-quality, relevant qu
 ## 🛠️ Configuration
 
 ### Environment Variables
-Create a `.env` file with:
+
+Create a .env file with:
 ```bash
 GEMINI_API_KEY=your_gemini_api_key_here
 LOG_LEVEL=INFO
@@ -202,6 +215,7 @@ BACKUP_RETENTION_DAYS=7
 ```
 
 ### Application Settings
+
 Modify constants in modules for customization:
 
 ```python
@@ -234,6 +248,7 @@ SUBMISSIONS_FILE = "submissions.json"  # Data storage file
 ## 🧪 Testing & Validation
 
 ### Manual Testing Scenarios
+
 1. **Happy Path**: Complete flow with valid inputs
 2. **Edge Cases**: Empty inputs, invalid formats, very long responses
 3. **Error Conditions**: API failures, network issues, file corruption
@@ -249,9 +264,10 @@ SUBMISSIONS_FILE = "submissions.json"  # Data storage file
 ## 🚧 Challenges & Solutions
 
 ### Challenge 1: Inconsistent AI Response Format
+
 **Problem**: Gemini API sometimes returns malformed JSON or unexpected formats.
 
-**Solution**: 
+**Solution**:
 - Implemented multiple parsing strategies (JSON, heading-based, line distribution)
 - Added comprehensive fallback question generation
 - Robust error handling with retry mechanisms
@@ -265,6 +281,7 @@ def _parse_json_from_text(text: str) -> Optional[Dict]:
 ```
 
 ### Challenge 2: Secure Data Handling
+
 **Problem**: Need to store candidate data while maintaining privacy compliance.
 
 **Solution**:
@@ -279,6 +296,7 @@ def hash_sensitive_data(data: str) -> str:
 ```
 
 ### Challenge 3: Natural Exit Detection
+
 **Problem**: Users express exit intent in various ways beyond simple keywords.
 
 **Solution**:
@@ -294,6 +312,7 @@ exit_phrases = [
 ```
 
 ### Challenge 4: Question Quality Assurance
+
 **Problem**: Ensuring generated questions are relevant and appropriately challenging.
 
 **Solution**:
@@ -302,6 +321,7 @@ exit_phrases = [
 - Fallback question templates for critical failures
 
 ### Challenge 5: User Experience Optimization
+
 **Problem**: Maintaining candidate engagement throughout the screening process.
 
 **Solution**:
@@ -312,6 +332,7 @@ exit_phrases = [
 ## 🤝 Contributing
 
 ### Development Setup
+
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
 3. Make your changes and test thoroughly
@@ -351,7 +372,7 @@ exit_phrases = [
 ```bash
 Error: GEMINI_API_KEY not found
 ```
-**Solution**: Ensure your `.env` file contains a valid Gemini API key.
+**Solution**: Ensure your .env file contains a valid Gemini API key.
 
 #### Import Errors
 ```bash
@@ -367,11 +388,10 @@ PermissionError: [Errno 13] Permission denied: 'submissions.json'
 
 #### Memory Issues
 **Symptoms**: Slow response, high memory usage
-**Solution**: 
+**Solution**:
 - Restart the application
 - Clear browser cache
 - Check for large submission files
-
 
 ## 🙏 Acknowledgments
 
